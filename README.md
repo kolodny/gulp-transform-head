@@ -23,7 +23,7 @@ The function to transform the head of the file
 
 Force buffers in the delim and transformer functions
 ```js
-var header = require('gulp-header');
+var transformHead = require('gulp-transform-head');
 
 gulp.src('./foo/*.js')
   .pipe(transformHead(0, function(data) { return '"use scrict";\n' + data }))
